@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .movie-card {
+            position: relative;
+            background: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .movie-image {
+            width: 100%;
+            height: 39vh;
+            display: block;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+            background: rgba(0,0,0,0);
+        }
+
+        .dates {
+            margin: 0;
+            padding: 2px;
+            list-style: none;
+            font-size: 1.4em;
+        }
+
+        .dates li {
+          background-color: #fff;
+          padding: 5px 0;
+            color: #000000;
+        }
+
+        .badge {
+          background-color: #574040;  
+          position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ffc444;
+            color: rgb(0, 0, 0);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://fmkor.stripocdnplugin.email/content/26a8b9d0c6f24003bf81b09b231a1ddd/lib/pluginId_26a8b9d0c6f24003bf81b09b231a1ddd_email_142/logo_24d_1.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="movies-grid">
+        <!-- Movie 1 -->
+        <div class="movie-card">
+            <img src="https://mff.dx.no/159682.png?w=480&h=480&fit=crop&auto=compress&crop=faces,top" alt="Movie" class="movie-image">
+            <div class="movie-info">
+                <ul class="dates">
+                    <li>Sundag 24. november • 17:00</li>
+                    <li>Fredag 06. desember • 17:30</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+            <img src="https://mff.dx.no/162118.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top" alt="Movie" class="movie-image">
+            <div class="movie-info">
+                <ul class="dates">
+                    <li>Sundag 24. november • 18:30</li>
+                    <li>Onsdag 27. november • 13:30</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie-card">
+            <img src="https://mff.dx.no/154385.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top" alt="Movie" class="movie-image">
+            <div class="movie-info">
+                <ul class="dates">
+                    <li>Onsdag 27. november • 19:30</li>
+                </ul>
+            </div>
+            <div class="badge">Siste dag</div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="movie-card">
+            <img src="https://dx-cw-static-files.imgix.net/128/kinosal3.jpeg" alt="Movie" class="movie-image">
+            <div class="movie-info">
+                <ul class="dates">
+                    <li>Sjå alle visninger på idhuset.no!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

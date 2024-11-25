@@ -1,0 +1,37 @@
+[
+  {
+    "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Onsdag 27. november • 13:30",
+    "badge": ""
+  },
+  {
+    "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Fredag 29. november • 20:15",
+    "badge": ""
+  },
+  {
+    "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Onsdag 27. november • 19:30",
+    "badge": "Siste dag"
+  },
+  {
+    "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Sundag 01. desember • 20:10",
+    "badge": "Siste dag"
+  },
+  {
+    "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Fredag 29. november • 18:00",
+    "badge": "Verdenspremiere"
+  },
+  {
+    "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Sundag 01. desember • 18:00",
+    "badge": ""
+  },
+  {
+    "backgroundImgScr": "https://mff.dx.no/159682.png?w=480&h=480&fit=crop&auto=compress&crop=faces,top",
+    "dateTime": "Fredag 06. desember • 17:30",
+    "badge": ""
+  }
+]
