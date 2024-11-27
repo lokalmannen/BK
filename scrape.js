@@ -45,7 +45,7 @@ const fetchMoviesData = async () => {
             movies.push({
               href: `https://idhuset.no${href}`,
               title,
-              backgroundImgScr: imageUrl.replace(/w=\d+&h=\d+/, 'w=480&h=480') // Adjust image size
+              backgroundImgScr: imageUrl.replace(/w=\d+&h=\d+/, 'w=480&h=auto') // Adjust image size
             });
           }
         }

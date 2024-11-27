@@ -1,7 +1,7 @@
 [
   {
     "title": "Nr. 24",
-    "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=480&fit=crop&auto=compress",
+    "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
         "dateTime": "Onsdag 27. november • 13:30",
@@ -15,7 +15,7 @@
   },
   {
     "title": "Tre menn til Vilma",
-    "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=480&fit=crop&auto=compress",
+    "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
         "dateTime": "Onsdag 27. november • 19:30",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Vaiana 2",
-    "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=480&fit=crop&auto=compress",
+    "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
         "dateTime": "Fredag 29. november • 18:00",
@@ -47,7 +47,7 @@
   },
   {
     "title": "Jul med Astrid Lindgren",
-    "backgroundImgScr": "https://mff.dx.no/159682.png?w=480&h=480&fit=crop&auto=compress",
+    "backgroundImgScr": "https://mff.dx.no/159682.png?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
         "dateTime": "Fredag 06. desember • 17:30",
