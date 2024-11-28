@@ -1,12 +1,22 @@
 [
   {
+    "title": "Vaiana 2",
+    "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=auto&fit=crop&auto=compress",
+    "screenings": [
+      {
+        "dateTime": "Fredag 29. november • 18:00",
+        "badge": "Verdenspremiere"
+      },
+      {
+        "dateTime": "Sundag 01. desember • 18:00",
+        "badge": ""
+      }
+    ]
+  },
+  {
     "title": "Nr. 24",
     "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
-      {
-        "dateTime": "Onsdag 27. november • 13:30",
-        "badge": ""
-      },
       {
         "dateTime": "Fredag 29. november • 20:15",
         "badge": ""
@@ -18,30 +28,12 @@
     "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Onsdag 27. november • 19:30",
-        "badge": ""
-      },
-      {
         "dateTime": "Sundag 01. desember • 20:10",
         "badge": ""
       },
       {
         "dateTime": "Onsdag 11. desember • 14:00",
         "badge": "Siste dag"
-      }
-    ]
-  },
-  {
-    "title": "Vaiana 2",
-    "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=auto&fit=crop&auto=compress",
-    "screenings": [
-      {
-        "dateTime": "Fredag 29. november • 18:00",
-        "badge": "Verdenspremiere"
-      },
-      {
-        "dateTime": "Sundag 01. desember • 18:00",
-        "badge": ""
       }
     ]
   },
