@@ -5,11 +5,7 @@
     "screenings": [
       {
         "dateTime": "Fredag 29. november • 18:00",
-        "badge": "Verdenspremiere"
-      },
-      {
-        "dateTime": "Sundag 01. desember • 18:00",
-        "badge": ""
+        "badge": "Premiere"
       }
     ]
   },
@@ -18,7 +14,7 @@
     "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Fredag 29. november • 20:15",
+        "dateTime": "No screenings available",
         "badge": ""
       }
     ]
@@ -28,12 +24,8 @@
     "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Sundag 01. desember • 20:10",
+        "dateTime": "No screenings available",
         "badge": ""
-      },
-      {
-        "dateTime": "Onsdag 11. desember • 14:00",
-        "badge": "Siste dag"
       }
     ]
   },
@@ -42,7 +34,7 @@
     "backgroundImgScr": "https://mff.dx.no/159682.png?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Fredag 06. desember • 17:30",
+        "dateTime": "No screenings available",
         "badge": ""
       }
     ]

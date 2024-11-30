@@ -2,6 +2,19 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
+// Valid badges and their mappings
+const validBadges = {
+  "Førpremiere": "Premiere",
+  "Verdenspremiere": "Premiere",
+  "Norgespremiere": "Premiere",
+  "Siste dag": "Siste dag",
+  "Babykino": "Babykino",
+  "Seniorkino": "Seniorkino",
+  "Nattkino": "Nattkino",
+  "Strikkekino": "Strikkekino",
+  "Vaffelkino": "Vaffelkino"
+};
+
 // Fallback data for when a movie fetch fails
 const fallbackData = [
   {
@@ -83,10 +96,20 @@ const fetchMoviesData = async () => {
         return screenings;
       });
 
+      // Filter and map badges
+      const filteredScreenings = screenings
+        .filter(screening => validBadges[screening.badge]) // Only include valid badges
+        .map(screening => ({
+          dateTime: screening.dateTime,
+          badge: validBadges[screening.badge] // Map the badge to its corresponding value
+        }));
+
       movies.push({
         title,
         backgroundImgScr,
-        screenings: screenings.length > 0 ? screenings : [{ dateTime: 'No screenings available', badge: '' }]
+        screenings: filteredScreenings.length > 0
+          ? filteredScreenings
+          : [{ dateTime: 'Kjem snart for salg', badge: '' }]
       });
 
       await moviePage.close();
@@ -107,7 +130,7 @@ const fetchMoviesData = async () => {
 const runScriptPeriodically = () => {
   console.log('Starting periodic updates...');
   fetchMoviesData(); // Run initially
-  setInterval(fetchMoviesData, 60 * 60 * 1000); // Run every hour
+  setInterval(fetchMoviesData, 15 * 60 * 1000); // Run every 15 minutes
 };
 
 // Execute script manually or periodically
