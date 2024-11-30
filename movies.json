@@ -4,17 +4,7 @@
     "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Fredag 29. november • 18:00",
-        "badge": "Premiere"
-      }
-    ]
-  },
-  {
-    "title": "Nr. 24",
-    "backgroundImgScr": "https://mff.dx.no/162118.jpg?w=480&h=auto&fit=crop&auto=compress",
-    "screenings": [
-      {
-        "dateTime": "No screenings available",
+        "dateTime": "Kjem snart for salg",
         "badge": ""
       }
     ]
@@ -24,7 +14,7 @@
     "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "No screenings available",
+        "dateTime": "Kjem snart for salg",
         "badge": ""
       }
     ]
@@ -34,8 +24,18 @@
     "backgroundImgScr": "https://mff.dx.no/159682.png?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "No screenings available",
+        "dateTime": "Kjem snart for salg",
         "badge": ""
+      }
+    ]
+  },
+  {
+    "title": "Ringenes herre: Slaget om Rohan",
+    "backgroundImgScr": "https://mff.dx.no/158336.jpg?w=480&h=auto&fit=crop&auto=compress",
+    "screenings": [
+      {
+        "dateTime": "Fredag 06. desember • 19:00",
+        "badge": "Premiere"
       }
     ]
   }
