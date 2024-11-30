@@ -15,20 +15,6 @@ const validBadges = {
   "Vaffelkino": "Vaffelkino"
 };
 
-// Fallback data for when a movie fetch fails
-const fallbackData = [
-  {
-    title: 'Placeholder Movie',
-    backgroundImgScr: 'https://via.placeholder.com/480',
-    screenings: [
-      {
-        dateTime: 'Visste du at du kan booke en privatvisning?',
-        badge: 'idhuset.no/kino'
-      }
-    ]
-  }
-];
-
 // Function to fetch and save movie data
 const fetchMoviesData = async () => {
   try {
@@ -75,33 +61,26 @@ const fetchMoviesData = async () => {
       const moviePage = await browser.newPage();
       await moviePage.goto(href, { waitUntil: 'networkidle2' });
 
+      // Collect all screening details
       const screenings = await moviePage.evaluate(() => {
         const screeningElements = document.querySelectorAll('.ticket-body');
-        const screenings = [];
-
-        screeningElements.forEach(screening => {
+        return Array.from(screeningElements).map(screening => {
           const badgeElement = screening.querySelector('.badge.is-highlight');
           const dateTimeElement = screening.querySelector('.ticket-time');
 
-          // Only fetch the badge if the "is-highlight" class is present
-          const badge = badgeElement ? badgeElement.textContent.trim() : '';
+          const badge = badgeElement ? badgeElement.textContent.trim() : 'No Badge';
           const dateTime = dateTimeElement ? dateTimeElement.textContent.trim() : 'Unknown Date & Time';
 
-          // Only include screenings with a dateTime
-          if (dateTime) {
-            screenings.push({ dateTime, badge });
-          }
+          return { dateTime, badge }; // Return both date and badge
         });
-
-        return screenings;
       });
 
       // Filter and map badges
       const filteredScreenings = screenings
-        .filter(screening => validBadges[screening.badge]) // Only include valid badges
+        .filter(screening => validBadges[screening.badge] || screening.dateTime) // Ensure valid badge or dateTime
         .map(screening => ({
           dateTime: screening.dateTime,
-          badge: validBadges[screening.badge] // Map the badge to its corresponding value
+          badge: validBadges[screening.badge] || screening.badge // Map the badge if valid
         }));
 
       movies.push({
@@ -109,7 +88,7 @@ const fetchMoviesData = async () => {
         backgroundImgScr,
         screenings: filteredScreenings.length > 0
           ? filteredScreenings
-          : [{ dateTime: 'Kjem snart for salg', badge: '' }]
+          : [{ dateTime: 'No screenings available', badge: '' }]
       });
 
       await moviePage.close();
