@@ -4,8 +4,7 @@
     "backgroundImgScr": "https://mff.dx.no/163256.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Sundag 01. desember • 18:00",
-        "badge": "No Badge"
+        "dateTime": "Sundag 01. desember • 18:00"
       }
     ]
   },
@@ -14,12 +13,10 @@
     "backgroundImgScr": "https://mff.dx.no/154385.jpg?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Sundag 01. desember • 20:10",
-        "badge": "No Badge"
+        "dateTime": "Sundag 01. desember • 20:10"
       },
       {
-        "dateTime": "Onsdag 11. desember • 14:00",
-        "badge": "No Badge"
+        "dateTime": "Onsdag 11. desember • 14:00"
       }
     ]
   },
@@ -28,8 +25,7 @@
     "backgroundImgScr": "https://mff.dx.no/159682.png?w=480&h=auto&fit=crop&auto=compress",
     "screenings": [
       {
-        "dateTime": "Fredag 06. desember • 17:30",
-        "badge": "No Badge"
+        "dateTime": "Fredag 06. desember • 17:30"
       }
     ]
   },
@@ -42,12 +38,10 @@
         "badge": "Premiere"
       },
       {
-        "dateTime": "Sundag 08. desember • 18:00",
-        "badge": "No Badge"
+        "dateTime": "Sundag 08. desember • 18:00"
       },
       {
-        "dateTime": "Fredag 13. desember • 18:00",
-        "badge": "No Badge"
+        "dateTime": "Fredag 13. desember • 18:00"
       }
     ]
   }

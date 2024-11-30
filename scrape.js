@@ -68,19 +68,23 @@ const fetchMoviesData = async () => {
           const badgeElement = screening.querySelector('.badge.is-highlight');
           const dateTimeElement = screening.querySelector('.ticket-time');
 
-          const badge = badgeElement ? badgeElement.textContent.trim() : 'No Badge';
+          const badge = badgeElement ? badgeElement.textContent.trim() : null;
           const dateTime = dateTimeElement ? dateTimeElement.textContent.trim() : 'Unknown Date & Time';
 
-          return { dateTime, badge }; // Return both date and badge
+          const screeningData = { dateTime };
+          if (badge) {
+            screeningData.badge = badge; // Add badge only if it exists
+          }
+          return screeningData;
         });
       });
 
       // Filter and map badges
       const filteredScreenings = screenings
-        .filter(screening => validBadges[screening.badge] || screening.dateTime) // Ensure valid badge or dateTime
+        .filter(screening => screening.dateTime) // Ensure valid dateTime
         .map(screening => ({
           dateTime: screening.dateTime,
-          badge: validBadges[screening.badge] || screening.badge // Map the badge if valid
+          ...(screening.badge && { badge: validBadges[screening.badge] || screening.badge }) // Conditionally include badge
         }));
 
       movies.push({
@@ -88,7 +92,7 @@ const fetchMoviesData = async () => {
         backgroundImgScr,
         screenings: filteredScreenings.length > 0
           ? filteredScreenings
-          : [{ dateTime: 'No screenings available', badge: '' }]
+          : [{ dateTime: 'No screenings available' }]
       });
 
       await moviePage.close();
